@@ -1,5 +1,8 @@
 Hirashi - The Epicyoobed AI|
+
 ---------------------------/
+
+
 
 This is a VERY indev version of my side project.
 
