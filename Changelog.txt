@@ -1,0 +1,10 @@
+Additions/Changes:
+*Initial Release
+*Basic conversations
+
+Bugfixes:
+
+Removals:
+
+Notes:
+*Questions and commands do not work yet
