@@ -287,7 +287,7 @@ function question()
    os.execute("shutdown -a")
   end
  elseif string.match(input, "love") then
-  print(AI..": No, but I can create the illusion of such emotion.")
+  print(AI..": No, I am only software, but I can create the illusion of such emotion.")
  elseif string.match(input, " open") then
   if string.match(input, " prompt") then
    print(AI..": Opening it!")
