@@ -1,7 +1,7 @@
 Overhaul = 1
 Major = 0
 Minor = 0
-ProjectName = "Closed Beta 1.0 Build 2 - Do not distribute the closed beta to any non-authorized people."
+ProjectName = "InDev 1.0.0"
 print("AI "..Overhaul.."."..Major.."."..Minor)
 print(ProjectName)
 print("For authorization questions, contact Alex at woofpup@hotmail.com.")
