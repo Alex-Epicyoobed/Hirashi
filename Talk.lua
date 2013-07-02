@@ -1,4 +1,3 @@
-os.execute("title Talking to AI")
 Overhaul = 1
 Major = 0
 Minor = 0
