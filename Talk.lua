@@ -1,9 +1,9 @@
 os.execute("title Talking to AI")
-V = 1
-R = 1
-B = 6
-ProjectName = "Prerelease 1"
-print("AI V"..V.."R"..R.."B"..B)
+overhaul = 1
+major= 0
+minor = 0
+ProjectName = "Closed Beta 1.0 - Do not Distribute to anyone who is not authorized by Alex! For questions about authotization, contact Alex at woofpup@hotmail.com."
+print("AI "..overhaul.."."..major.."."..minor)
 print(ProjectName)
 t = os.time()
 while t - os.time() ~= -5 do
@@ -141,6 +141,7 @@ function talk()
  os.execute("cls")
  input = string.lower(input)
  input = string.gsub(input, " shit", "vulg")
+ input = string.gsub(input, " shit", "vulg")
  input = string.gsub(input, " bitch", "vulg")
  input = string.gsub(input, " dick", "vulg")
  input = string.gsub(input, " ass", "vulg")
@@ -177,7 +178,7 @@ function talk()
  first = 1
  if string.match(input, "fuck") then
   if string.match(input, "want") then
-   print(AI..": Ummm.... I don't really want to, thanks...")
+   print(AI..": I am a bot. This is not possible, human!")
    friendly = friendly - 5
   else
    print(AI..": Hey!")
@@ -198,7 +199,7 @@ function talk()
    print(AI..": You thinkI don't know that?!")
    friendly = friendly - 3
   end
- elseif string.match(input, "isaak") then
+ elseif string.match(input, "alex") then
   print(AI..": You mean my creator?")
   if string.match(input, "positive") then
    print("I agree")
