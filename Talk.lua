@@ -1,10 +1,11 @@
 os.execute("title Talking to AI")
-V = 1
-R = 1
-B = 6
-ProjectName = "Prerelease 1"
-print("AI V"..V.."R"..R.."B"..B)
+Overhaul = 1
+Major = 0
+Minor = 0
+ProjectName = "Closed Beta 1.0 Build 2 - Do not distribute the closed beta to any non-authorized people."
+print("AI "..Overhaul.."."..Major.."."..Minor)
 print(ProjectName)
+print("For authorization questions, contact Alex at woofpup@hotmail.com.")
 t = os.time()
 while t - os.time() ~= -5 do
 end
@@ -140,6 +141,7 @@ function talk()
  input = io.read()
  os.execute("cls")
  input = string.lower(input)
+ input = string.gsup(input, " shit", "vulg")
  input = string.gsub(input, " shit", "vulg")
  input = string.gsub(input, " bitch", "vulg")
  input = string.gsub(input, " dick", "vulg")
@@ -190,15 +192,15 @@ function talk()
  elseif string.match(input, "vulg") then
   print(AI..": Hey!!")
   if friendly < 20 then
-   print("forget you!")
+   print("Forget you!")
   end
   friendly = friendly - 5
  elseif string.match(input, " robot") then
   if string.match(input, " you") then
-   print(AI..": You thinkI don't know that?!")
+   print(AI..": You think I don't know that?!")
    friendly = friendly - 3
   end
- elseif string.match(input, "isaak") then
+ elseif string.match(input, "alex") then
   print(AI..": You mean my creator?")
   if string.match(input, "positive") then
    print("I agree")
@@ -287,7 +289,7 @@ function question()
    os.execute("shutdown -a")
   end
  elseif string.match(input, "love") then
-  print(AI..": No, but I can create the illusion of such emotion.")
+  print(AI..": No, I am only software. But I can create the illusion of such emotion.")
  elseif string.match(input, " open") then
   if string.match(input, " prompt") then
    print(AI..": Opening it!")
